@@ -1,0 +1,41 @@
+{
+    "swagger": "2.0",
+    "info": {
+      "title": "Acuration Data REST API",
+      "description": "API that demonstrates use of accuration API using Flask-SwaggerUI.",
+      "version": "1.0"
+    },
+    "basePath": "/",
+    "schemes": [
+      "http"
+    ],
+    "consumes": [
+      "application/json"
+    ],
+    "produces": [
+      "application/json"
+    ],
+    "paths": {
+      "/hello": {
+        "get": {
+          "summary": "Returns a simple greeting message.",
+          "produces": [
+            "application/json"
+          ],
+          "responses": {
+            "200": {
+              "description": "Successful response.",
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "message": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
